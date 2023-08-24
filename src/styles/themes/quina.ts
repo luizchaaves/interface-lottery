@@ -1,5 +1,7 @@
+import { LotteryType } from '../../types/lottery-types';
+
 export default {
-  title: 'quina',
+  title: LotteryType.QUINA,
   colors: {
     primary: '#8666EF',
     secondary: '#EFEFEF',
@@ -8,5 +10,9 @@ export default {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#333333',
+  },
+  breakpoints: {
+    mobile: '768px',
+    desktop: '992px',
   },
 };

@@ -12,5 +12,9 @@ declare module 'styled-components' {
       black: string;
       gray: string;
     };
+    breakpoints: {
+      mobile: string;
+      desktop: string;
+    };
   }
 }
