@@ -1,10 +1,11 @@
 import Providers from './components/Providers';
+import Home from './pages/Home';
 import GlobalStyles from './styles/global';
 
 function App() {
   return (
     <Providers>
-      App
+      <Home />
       <GlobalStyles />
     </Providers>
   );
