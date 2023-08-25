@@ -1,6 +1,7 @@
 import { Container, Content } from './styles';
 import Logo from '../Logo';
 import Select from '../Select';
+import Contest from '../Contest';
 
 const Sidebar = () => {
   return (
@@ -8,7 +9,7 @@ const Sidebar = () => {
       <Content>
         <Select />
         <Logo />
-        <div>Concurso</div>
+        <Contest />
       </Content>
     </Container>
   );
