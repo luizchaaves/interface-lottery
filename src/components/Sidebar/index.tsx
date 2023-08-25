@@ -1,11 +1,12 @@
 import { Container, Content } from './styles';
 import Logo from '../Logo';
+import Select from '../Select';
 
 const Sidebar = () => {
   return (
     <Container>
       <Content>
-        <div>Combo box</div>
+        <Select />
         <Logo />
         <div>Concurso</div>
       </Content>
