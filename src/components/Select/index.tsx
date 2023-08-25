@@ -2,14 +2,20 @@ import { Container, SelectComponent } from './styles';
 import ArrowIcon from '../../assets/ArrowIcon';
 import { LotteryType } from '../../types/lottery-types';
 import { useLottery } from '../../hooks/useLottery';
+import { formatTitle } from '../../utils/formatTitle';
+import { useEffect } from 'react';
 
 const Select = () => {
-  const { filter, setFilter } = useLottery();
+  const { filter, setFilter, setTitle } = useLottery();
 
-  const handleChange = ({ target }: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = target.value as LotteryType;
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value as LotteryType;
     setFilter(value);
   };
+
+  useEffect(() => {
+    setTitle(formatTitle(filter));
+  }, [filter, setTitle]);
 
   return (
     <Container>
