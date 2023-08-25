@@ -1,8 +1,8 @@
 export enum LotteryType {
-  'MEGA' = 'MEGA-SENA',
-  'QUINA' = 'QUINA',
-  'LOTOFACIL' = 'LOTOFACIL',
-  'LOTOMANIA' = 'LOTOMANIA',
-  'TIMEMANIA' = 'TIMEMANIA',
-  'DIASORTE' = 'DIA DE SORTE',
+  'MEGA' = 'megasena',
+  'QUINA' = 'quina',
+  'LOTOFACIL' = 'lotofacil',
+  'LOTOMANIA' = 'lotomania',
+  'TIMEMANIA' = 'timemania',
+  'DIASORTE' = 'diadesorte',
 }
