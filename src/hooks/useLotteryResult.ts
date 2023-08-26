@@ -5,7 +5,7 @@ import { getLatestLotteryResult } from '../services/api';
 const useLotteryResult = () => {
   const { filter } = useLottery();
 
-  const { data } = useQuery({
+  const { data, isLoading } = useQuery({
     queryFn: () => getLatestLotteryResult(filter),
     queryKey: ['result', filter],
     staleTime: 1000 * 60 * 10,
@@ -13,7 +13,7 @@ const useLotteryResult = () => {
     refetchOnWindowFocus: false,
   });
 
-  return { data };
+  return { data, isLoading };
 };
 
 export default useLotteryResult;
