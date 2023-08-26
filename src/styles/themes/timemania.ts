@@ -1,6 +1,6 @@
 import { LotteryType } from '../../types/lottery-types';
 
-export default {
+export const timemania = {
   title: LotteryType.TIMEMANIA,
   colors: {
     primary: '#5AAD7D',

@@ -1,6 +1,6 @@
 import { LotteryType } from '../../types/lottery-types';
 
-export default {
+export const diasorte = {
   title: LotteryType.DIASORTE,
   colors: {
     primary: '#BFAF83',

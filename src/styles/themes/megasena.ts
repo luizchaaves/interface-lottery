@@ -1,6 +1,6 @@
 import { LotteryType } from '../../types/lottery-types';
 
-export default {
+export const megasena = {
   title: LotteryType.MEGA,
   colors: {
     primary: '#6BEFA3',

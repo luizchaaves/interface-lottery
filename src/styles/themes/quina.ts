@@ -1,6 +1,6 @@
 import { LotteryType } from '../../types/lottery-types';
 
-export default {
+export const quina = {
   title: LotteryType.QUINA,
   colors: {
     primary: '#8666EF',
