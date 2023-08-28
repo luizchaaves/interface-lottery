@@ -29,6 +29,7 @@ export const SelectComponent = styled.select`
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  color: ${(props) => props.theme.colors.gray};
 
   &:focus {
     outline: none;
