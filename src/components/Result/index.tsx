@@ -13,7 +13,15 @@ const Result = () => {
       <div>
         {isLoading ? (
           <Loading>
-            <Skeleton baseColor="#d9d9d9" highlightColor="#ebebeb" />
+            <Skeleton
+              baseColor="#d9d9d9"
+              highlightColor="#ebebeb"
+              count={5}
+              circle
+              width={80}
+              height={80}
+              inline
+            />
           </Loading>
         ) : (
           <Content>

@@ -51,11 +51,11 @@ export const Content = styled.div`
 `;
 
 export const Loading = styled.div`
-  width: 100%;
-  height: 50px;
-
-  span {
-    width: 100%;
-    height: 100%;
+  > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 `;
