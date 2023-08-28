@@ -55,7 +55,23 @@ export const Loading = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 35px;
     flex-wrap: wrap;
+
+    span {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.desktop}) {
+      span {
+        width: 76px;
+        height: 76px;
+      }
+    }
+
+    @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+      gap: 20px;
+    }
   }
 `;

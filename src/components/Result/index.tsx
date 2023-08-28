@@ -16,10 +16,8 @@ const Result = () => {
             <Skeleton
               baseColor="#d9d9d9"
               highlightColor="#ebebeb"
-              count={5}
+              count={6}
               circle
-              width={80}
-              height={80}
               inline
             />
           </Loading>
@@ -34,12 +32,10 @@ const Result = () => {
         )}
       </div>
 
-      {!isLoading && (
-        <p>
-          Este sorteio é meramente ilustrativo e não possui nenhuma ligação com
-          a CAIXA.
-        </p>
-      )}
+      <p>
+        Este sorteio é meramente ilustrativo e não possui nenhuma ligação com a
+        CAIXA.
+      </p>
     </Container>
   );
 };
